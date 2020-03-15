@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list
     # full names of each actor associated with show
     self.actors do |t|
-     print t.actors
+     return #{first_name} + " " #{last_name}
     end
   end
   
