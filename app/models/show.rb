@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
     self.actors do |t|
-     return first_name + " " last_name
+     print first_name + " " last_name
     end
   end
   
