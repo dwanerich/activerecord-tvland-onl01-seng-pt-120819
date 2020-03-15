@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   belongs_to :network
   
-  def self.actors_list
+  def actors_list
     # full names of each actor associated with show
     self.actors do |t|
      print t.actors
