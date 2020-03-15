@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
     # full names of each actor associated with show
-    self.actors.map do |t|
+    actors.map do |t|
       t.actors
     end
   end
